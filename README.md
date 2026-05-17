@@ -4,6 +4,12 @@ NexusAI is a premium, cyber-themed, and highly automated MERN platform designed 
 
 ---
 
+### 🌐 Live Production Deployment
+*   **Frontend Client**: [https://nexusai-mern.vercel.app](https://nexusai-mern.vercel.app)
+*   **Backend Server API**: [https://server-gamma-opal-34.vercel.app/api/health](https://server-gamma-opal-34.vercel.app/api/health)
+
+---
+
 ## 🚀 Key Features
 
 *   **⚡ Cyberpunk & Glassmorphic UI/UX**: An interface crafted with custom CSS variables (`--neon-cyan`, `--neon-purple`, `--neon-green`), dynamic scale tap states, and professional layout designs with smooth custom page transitions.

@@ -13,7 +13,7 @@ import { initToolsCron } from './services/toolsCron.js';
 // Initialize express app
 const app = express();
 // CORS middleware
-app.use(cors({ origin: ["http://localhost:3000", "http://localhost:3001"], credentials: true }));
+app.use(cors({ origin: ["http://localhost:3000", "http://localhost:3001", "https://client-nine-jade-79.vercel.app"], credentials: true }));
 // Middleware (to parse JSON and urlencoded data) (body-parser)
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

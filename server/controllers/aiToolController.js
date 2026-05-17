@@ -208,3 +208,14 @@ export const rateTool = async (req, res) => {
         res.status(500).json({ errorMessage: error.message });
     }
 };
+
+// GET /api/tools/cron-update (Vercel serverless cron trigger)
+import { addUpcomingTool } from "../services/toolsCron.js";
+export const triggerToolsCron = async (req, res) => {
+    try {
+        const addedTool = await addUpcomingTool();
+        res.status(200).json({ success: true, message: "Tools cron executed successfully", addedTool });
+    } catch (error) {
+        res.status(500).json({ success: false, errorMessage: error.message });
+    }
+};

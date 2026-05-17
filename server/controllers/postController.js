@@ -156,3 +156,14 @@ export const deletePost = async (req, res) => {
         res.status(500).json({ errorMessage: error.message });
     }
 };
+
+// GET /api/posts/cron-update (Vercel serverless cron trigger)
+import { fetchAndSaveNews } from "../services/newsCron.js";
+export const triggerNewsCron = async (req, res) => {
+    try {
+        await fetchAndSaveNews();
+        res.status(200).json({ success: true, message: "News cron executed successfully" });
+    } catch (error) {
+        res.status(500).json({ success: false, errorMessage: error.message });
+    }
+};

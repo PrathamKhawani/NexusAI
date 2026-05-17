@@ -1,0 +1,22 @@
+[
+    { "name": "Fireflies.ai", "description": "AI meeting assistant that automatically transcribes, summarizes, and analyzes voice conversations.", "category": "Productivity", "url": "https://fireflies.ai", "pricing": "Freemium" },
+    { "name": "Gamma", "description": "A new medium for presenting ideas, powered by AI. Create beautiful, engaging content with none of the formatting and design work.", "category": "Productivity", "url": "https://gamma.app", "pricing": "Freemium" },
+    { "name": "Leonardo.ai", "description": "Create production-quality visual assets for your projects with unprecedented quality, speed, and style consistency.", "category": "Image Gen", "url": "https://leonardo.ai", "pricing": "Freemium" },
+    { "name": "Luma Dream Machine", "description": "Next generation AI model that builds high-quality, realistic video from text and images extremely fast.", "category": "Video", "url": "https://lumalabs.ai/dream-machine", "pricing": "Freemium" },
+    { "name": "Suno", "description": "Make a song about anything. Suno is building a future where anyone can make great music using AI.", "category": "Voice", "url": "https://suno.com", "pricing": "Freemium" },
+    { "name": "Devin", "description": "The world's first fully autonomous AI software engineer, capable of planning, coding, and debugging complex projects.", "category": "Code", "url": "https://cognition.ai", "pricing": "Paid" },
+    { "name": "HeyGen", "description": "Produce AI videos with human avatars, translating videos into multiple languages with perfect lip-syncing.", "category": "Video", "url": "https://heygen.com", "pricing": "Paid" },
+    { "name": "Phind", "description": "The search engine for developers. Phind answers your coding questions with direct, actionable code snippets and explanations.", "category": "Code", "url": "https://phind.com", "pricing": "Freemium" },
+    { "name": "Perplexity Pro", "description": "Advanced AI search engine combining Claude 3, GPT-4o, and live web access to synthesize perfectly cited research.", "category": "Research", "url": "https://perplexity.ai", "pricing": "Paid" },
+    { "name": "Pika Labs", "description": "An idea-to-video platform that sets your creativity in motion. Generate 3D animation, anime, cinematic and more.", "category": "Video", "url": "https://pika.art", "pricing": "Freemium" },
+    { "name": "Cohere", "description": "Enterprise-grade LLMs designed for real-world business applications, offering leading RAG and search capabilities.", "category": "LLM", "url": "https://cohere.com", "pricing": "Paid" },
+    { "name": "Copy.ai", "description": "The AI marketing operating system. Build marketing campaigns and write copy instantly with AI.", "category": "Productivity", "url": "https://copy.ai", "pricing": "Freemium" },
+    { "name": "Beautiful.ai", "description": "Presentation software that designs for you. Expert decks in minutes, not hours, powered by AI.", "category": "Productivity", "url": "https://beautiful.ai", "pricing": "Paid" },
+    { "name": "Character.ai", "description": "Neural language models that allow you to create and converse with AI characters that have specific personalities.", "category": "LLM", "url": "https://character.ai", "pricing": "Freemium" },
+    { "name": "Rose AI", "description": "Find, engage, visualize and share data seamlessly. A cloud data platform to research faster.", "category": "Data", "url": "https://rose.ai", "pricing": "Freemium" },
+    { "name": "Julius AI", "description": "Your AI data analyst. Chat with your data, create visualizations, and train predictive models easily.", "category": "Data", "url": "https://julius.ai", "pricing": "Freemium" },
+    { "name": "Tome", "description": "The AI-powered storytelling format. Build generative narratives and presentations in seconds.", "category": "Productivity", "url": "https://tome.app", "pricing": "Freemium" },
+    { "name": "Llama 3", "description": "Meta's highly capable open-source large language model, offering near state-of-the-art performance available for free.", "category": "LLM", "url": "https://llama.meta.com", "pricing": "Open Source" },
+    { "name": "Mistral", "description": "European AI company building highly efficient, open-weight language models like Mixtral 8x7B.", "category": "LLM", "url": "https://mistral.ai", "pricing": "Open Source" },
+    { "name": "Grok", "description": "xAI's conversational model with real-time knowledge of the world via the X platform.", "category": "LLM", "url": "https://x.ai", "pricing": "Paid" }
+]

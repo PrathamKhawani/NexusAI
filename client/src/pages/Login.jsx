@@ -38,7 +38,7 @@ const Login = () => {
         <PageTransition>
             <SEOHead
                 title="Login"
-                description="Sign in to NexusAI — your AI-native intelligence hub. Access your dashboard, AI news, tools directory, and bookmarks."
+                description="Sign in to NovaAI — your AI-native intelligence hub. Access your dashboard, AI news, tools directory, and bookmarks."
                 canonicalPath="/login"
                 noIndex={true}
                 breadcrumbs={[{ name: "Home", url: "/" }, { name: "Login", url: "/login" }]}
@@ -51,7 +51,7 @@ const Login = () => {
                             <LogIn size={20} className="text-[var(--neon-cyan)]" />
                         </div>
                         <h1 className="text-xl font-bold text-[var(--neon-cyan)] font-mono tracking-widest">AUTHENTICATION</h1>
-                        <p className="text-xs font-mono text-[var(--text-muted)] mt-1 tracking-widest">NEXUSAI_SECURE_ACCESS_v2</p>
+                        <p className="text-xs font-mono text-[var(--text-muted)] mt-1 tracking-widest">NOVAAI_SECURE_ACCESS_v2</p>
                     </div>
 
                     <form onSubmit={handleSubmit} className="space-y-5" noValidate>
@@ -61,7 +61,7 @@ const Login = () => {
                             type="email"
                             value={form.email}
                             onChange={handleChange}
-                            placeholder="user@nexusai.app"
+                            placeholder="user@novaai.app"
                             required
                             autoComplete="email"
                             icon={Mail}

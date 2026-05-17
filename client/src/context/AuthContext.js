@@ -35,7 +35,7 @@ export const AuthProvider = ({ children }) => {
     const logout = () => {
         localStorage.removeItem("token");
         setUser(null);
-        toast.success("🔌 Disconnected from NexusAI");
+        toast.success("🔌 Disconnected from NovaAI");
     };
 
     return (

@@ -80,7 +80,7 @@ const Profile = () => {
         <PageTransition>
             <SEOHead
                 title="My Profile"
-                description="Manage your NexusAI profile, skills, XP progress, streak, and activity timeline."
+                description="Manage your NovaAI profile, skills, XP progress, streak, and activity timeline."
                 canonicalPath="/profile"
                 noIndex={true}
                 breadcrumbs={[{ name: "Home", url: "/" }, { name: "Dashboard", url: "/dashboard" }, { name: "Profile", url: "/profile" }]}

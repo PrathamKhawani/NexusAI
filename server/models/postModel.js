@@ -4,7 +4,7 @@ const postSchema = new mongoose.Schema({
     title: { type: String, required: true, trim: true },
     summary: { type: String, required: true, maxlength: 500 },
     content: { type: String, default: '' },
-    source: { type: String, default: 'NexusAI' },
+    source: { type: String, default: 'NovaAI' },
     url: { type: String, default: '', unique: true, sparse: true },
     imageUrl: { type: String, default: '' },
     category: {
@@ -13,7 +13,7 @@ const postSchema = new mongoose.Schema({
         default: 'General'
     },
     tags: [{ type: String }],
-    author: { type: String, default: 'NexusAI Editorial' },
+    author: { type: String, default: 'NovaAI Editorial' },
     publishedAt: { type: Date, default: Date.now },
     isFeatured: { type: Boolean, default: false },
     views: { type: Number, default: 0 },

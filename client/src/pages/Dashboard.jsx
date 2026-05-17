@@ -74,7 +74,7 @@ const Dashboard = () => {
         <PageTransition>
             <SEOHead
                 title="Dashboard"
-                description="Your NexusAI neural intelligence dashboard. View AI news, tools, XP progress, and activity timeline."
+                description="Your NovaAI neural intelligence dashboard. View AI news, tools, XP progress, and activity timeline."
                 canonicalPath="/dashboard"
                 noIndex={true}
                 breadcrumbs={[{ name: "Home", url: "/" }, { name: "Dashboard", url: "/dashboard" }]}

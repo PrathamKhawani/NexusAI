@@ -85,7 +85,7 @@ const NewsFeed = () => {
         <PageTransition>
             <SEOHead
                 title="AI News Feed"
-                description="Read the latest AI and tech news: GPT models, machine learning research, robotics, Web3, and developer tools. Curated by NexusAI."
+                description="Read the latest AI and tech news: GPT models, machine learning research, robotics, Web3, and developer tools. Curated by NovaAI."
                 keywords={["AI news", "machine learning news", "GPT news", "tech news 2025", "AI research", "robotics news"]}
                 canonicalPath="/news"
                 breadcrumbs={[{ name: "Home", url: "/" }, { name: "AI News", url: "/news" }]}

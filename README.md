@@ -1,11 +1,11 @@
-# 🌌 NexusAI — AI-Native Intelligence Hub
+# 🌌 NovaAI — AI-Native Intelligence Hub
 
-NexusAI is a premium, cyber-themed, and highly automated MERN platform designed as an intelligence dashboard for artificial intelligence news and tool directories. It features immersive styling, live news integrations, user gamification, and robust bookmarking systems.
+NovaAI is a premium, cyber-themed, and highly automated MERN platform designed as an intelligence dashboard for artificial intelligence news and tool directories. It features immersive styling, live news integrations, user gamification, and robust bookmarking systems.
 
 ---
 
 ### 🌐 Live Production Deployment
-*   **Frontend Client**: [https://nexusai-mern.vercel.app](https://nexusai-mern.vercel.app)
+*   **Frontend Client**: [https://novaai-mern.vercel.app](https://novaai-mern.vercel.app)
 *   **Backend Server API**: [https://server-gamma-opal-34.vercel.app/api/health](https://server-gamma-opal-34.vercel.app/api/health)
 
 ---
@@ -67,7 +67,7 @@ The application will boot up at `http://localhost:3000`.
 ## 📁 Repository Structure
 
 ```
-NexusAI/
+NovaAI/
 ├── client/                 # React frontend
 │   ├── src/
 │   │   ├── components/     # UI elements (Cards, Inputs, Buttons)

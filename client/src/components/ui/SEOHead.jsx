@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 
 /**
- * SEOHead — Comprehensive SEO + AI SEO component for NexusAI
+ * SEOHead — Comprehensive SEO + AI SEO component for NovaAI
  * Injects: title, meta description, keywords, OG, Twitter Cards,
  * JSON-LD structured data (WebApplication / Article / BreadcrumbList)
  */
@@ -16,8 +16,8 @@ const SEOHead = ({
     breadcrumbs = [],            // [{ name, url }]
     noIndex = false,
 }) => {
-    const SITE_NAME = "NexusAI";
-    const SITE_URL = "https://nexusai.app";
+    const SITE_NAME = "NovaAI";
+    const SITE_URL = "https://novaai.app";
     const FULL_TITLE = title ? `${title} | ${SITE_NAME}` : `${SITE_NAME} — The Neural Intelligence Hub`;
     const CANONICAL = `${SITE_URL}${canonicalPath}`;
     const OG_IMAGE = ogImage.startsWith("http") ? ogImage : `${SITE_URL}${ogImage}`;
@@ -25,7 +25,7 @@ const SEOHead = ({
     const DEFAULT_KEYWORDS = [
         "AI tools", "artificial intelligence", "machine learning", "LLM",
         "GPT", "AI news", "AI directory", "neural networks", "deep learning",
-        "AI platform", "tech intelligence", "NexusAI"
+        "AI platform", "tech intelligence", "NovaAI"
     ];
     const allKeywords = [...DEFAULT_KEYWORDS, ...keywords].join(", ");
 
@@ -35,7 +35,7 @@ const SEOHead = ({
         "@type": "WebApplication",
         "name": SITE_NAME,
         "url": SITE_URL,
-        "description": "NexusAI is an AI-native intelligence platform for discovering cutting-edge AI tools, reading the latest tech news, and tracking your AI learning journey.",
+        "description": "NovaAI is an AI-native intelligence platform for discovering cutting-edge AI tools, reading the latest tech news, and tracking your AI learning journey.",
         "applicationCategory": "TechnologyApplication",
         "operatingSystem": "Web Browser",
         "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
@@ -86,18 +86,18 @@ const SEOHead = ({
         "mainEntity": [
             {
                 "@type": "Question",
-                "name": "What is NexusAI?",
+                "name": "What is NovaAI?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "NexusAI is an AI-native intelligence platform for discovering the latest AI tools, reading curated AI and tech news, and tracking your learning journey with XP and streaks."
+                    "text": "NovaAI is an AI-native intelligence platform for discovering the latest AI tools, reading curated AI and tech news, and tracking your learning journey with XP and streaks."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Is NexusAI free to use?",
+                "name": "Is NovaAI free to use?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes, NexusAI is completely free to sign up and use. You can browse AI tools, read tech news, and save bookmarks without any cost."
+                    "text": "Yes, NovaAI is completely free to sign up and use. You can browse AI tools, read tech news, and save bookmarks without any cost."
                 }
             },
             {
@@ -149,7 +149,7 @@ const SEOHead = ({
 
             {/* AI SEO / LLM-friendly meta */}
             <meta name="application-name" content={SITE_NAME} />
-            <meta name="generator" content="NexusAI v2.0" />
+            <meta name="generator" content="NovaAI v2.0" />
             <meta name="theme-color" content="#00f5ff" />
             <meta name="color-scheme" content="dark" />
 

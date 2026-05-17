@@ -13,7 +13,7 @@ import { initToolsCron } from './services/toolsCron.js';
 // Initialize express app
 const app = express();
 // CORS middleware
-app.use(cors({ origin: ["http://localhost:3000", "http://localhost:3001", "https://client-nine-jade-79.vercel.app", "https://nexusai-mern.vercel.app"], credentials: true }));
+app.use(cors({ origin: ["http://localhost:3000", "http://localhost:3001", "https://client-nine-jade-79.vercel.app", "https://novaai-mern.vercel.app"], credentials: true }));
 // Middleware (to parse JSON and urlencoded data) (body-parser)
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -21,7 +21,7 @@ app.use(express.urlencoded({ extended: true }));
 dotenv.config();
 
 const PORT = process.env.PORT || 5000;
-const MONGO_URL = process.env.MONGO_URL || 'mongodb://localhost:27017/nexusai_db';
+const MONGO_URL = process.env.MONGO_URL || 'mongodb://localhost:27017/novaai_db';
 
 // Database connection helper
 let isConnected = false;
@@ -36,7 +36,7 @@ const connectDB = async () => {
             serverSelectionTimeoutMS: 5000 // Quick timeout to fail fast instead of hanging 10s
         });
         isConnected = true;
-        console.log('✅ NexusAI — Connected to MongoDB');
+        console.log('✅ NovaAI — Connected to MongoDB');
         
         // Only initialize in-memory crons if not on Vercel
         if (!process.env.VERCEL) {
@@ -70,12 +70,12 @@ app.use(async (req, res, next) => {
 // Start local server if not running on Vercel
 if (!process.env.VERCEL) {
     app.listen(PORT, () => {
-        console.log(`🚀 NexusAI Server running on Port: ${PORT}`);
+        console.log(`🚀 NovaAI Server running on Port: ${PORT}`);
     });
 }
 
 // Health check
-app.get('/api/health', (req, res) => res.status(200).json({ status: 'ok', app: 'NexusAI', version: '2.0.0' }));
+app.get('/api/health', (req, res) => res.status(200).json({ status: 'ok', app: 'NovaAI', version: '2.0.0' }));
 
 // Routes
 app.use('/api/users', userRoutes);
@@ -84,4 +84,4 @@ app.use('/api/tools', aiToolRoutes);
 app.use('/api/activity', activityRoutes);
 app.use('/api/bookmarks', bookmarkRoutes);
 
-export default app;
+export default app;

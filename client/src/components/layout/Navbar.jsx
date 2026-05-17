@@ -53,13 +53,13 @@ const Navbar = () => {
                 <Link
                     to="/"
                     className="flex items-center gap-2"
-                    aria-label="NexusAI Home"
+                    aria-label="NovaAI Home"
                 >
                     <span className="w-8 h-8 flex items-center justify-center border border-[var(--neon-cyan)] rounded text-[var(--neon-cyan)] text-xs font-mono font-bold">
                         NX
                     </span>
                     <GlitchText
-                        text="NexusAI"
+                        text="NovaAI"
                         tag="span"
                         className="text-xl font-bold text-[var(--neon-cyan)] font-mono hidden sm:inline"
                     />

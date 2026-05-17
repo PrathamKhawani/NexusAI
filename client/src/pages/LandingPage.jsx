@@ -16,16 +16,16 @@ const FEATURES = [
 ];
 
 const FAQ = [
-    { q: "What is NexusAI?", a: "NexusAI is an AI-native intelligence platform for discovering cutting-edge AI tools, reading the latest tech news, and tracking your AI learning journey with XP and streaks." },
-    { q: "Is NexusAI free?", a: "Yes — completely free. Sign up, explore AI tools, read curated news, bookmark your favorites, and earn XP without any subscription." },
-    { q: "What data does NexusAI store?", a: "NexusAI stores user profiles, AI tool ratings, bookmarked articles and tools, activity logs, and news posts — all in MongoDB Atlas cloud." },
+    { q: "What is NovaAI?", a: "NovaAI is an AI-native intelligence platform for discovering cutting-edge AI tools, reading the latest tech news, and tracking your AI learning journey with XP and streaks." },
+    { q: "Is NovaAI free?", a: "Yes — completely free. Sign up, explore AI tools, read curated news, bookmark your favorites, and earn XP without any subscription." },
+    { q: "What data does NovaAI store?", a: "NovaAI stores user profiles, AI tool ratings, bookmarked articles and tools, activity logs, and news posts — all in MongoDB Atlas cloud." },
 ];
 
 const LandingPage = () => {
     return (
         <PageTransition>
             <SEOHead
-                title="NexusAI — The Neural Intelligence Hub"
+                title="NovaAI — The Neural Intelligence Hub"
                 description="Discover the best AI tools, read curated AI and tech news, track your learning with XP streaks, and bookmark your favorite AI resources. Built on MERN stack."
                 keywords={["AI tools directory", "AI news", "artificial intelligence platform", "GPT tools", "machine learning news", "AI learning platform"]}
                 canonicalPath="/"
@@ -49,7 +49,7 @@ const LandingPage = () => {
 
                         <h1 className="text-6xl md:text-8xl font-black tracking-tight mb-6" style={{ fontFamily: "'Orbitron', sans-serif" }}>
                             <GlitchText
-                                text="NexusAI"
+                                text="NovaAI"
                                 className="text-[var(--neon-cyan)]"
                             />
                         </h1>

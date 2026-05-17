@@ -52,7 +52,7 @@ const Bookmarks = () => {
         <PageTransition>
             <SEOHead
                 title="My Bookmarks"
-                description="Your saved AI news articles and AI tools on NexusAI."
+                description="Your saved AI news articles and AI tools on NovaAI."
                 canonicalPath="/bookmarks"
                 noIndex={true}
                 breadcrumbs={[{ name: "Home", url: "/" }, { name: "Dashboard", url: "/dashboard" }, { name: "Bookmarks", url: "/bookmarks" }]}

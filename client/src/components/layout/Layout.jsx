@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
 
                 <footer className="border-t border-[rgba(0,245,255,0.1)] py-6 text-center" role="contentinfo">
                     <p className="text-xs font-mono text-[var(--text-muted)] tracking-widest">
-                        <span className="text-[var(--neon-cyan)]">NEXUSAI</span> &nbsp;|&nbsp; Neural Intelligence Hub &nbsp;|&nbsp; MERN Stack &copy; {new Date().getFullYear()}
+                        <span className="text-[var(--neon-cyan)]">NOVAAI</span> &nbsp;|&nbsp; Neural Intelligence Hub &nbsp;|&nbsp; MERN Stack &copy; {new Date().getFullYear()}
                     </p>
                 </footer>
             </div>

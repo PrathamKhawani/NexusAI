@@ -39,7 +39,7 @@ const Register = () => {
         <PageTransition>
             <SEOHead
                 title="Register"
-                description="Create your free NexusAI account and join the neural intelligence hub. Discover AI tools, read AI news, earn XP and build your AI knowledge streak."
+                description="Create your free NovaAI account and join the neural intelligence hub. Discover AI tools, read AI news, earn XP and build your AI knowledge streak."
                 canonicalPath="/register"
                 noIndex={true}
                 breadcrumbs={[{ name: "Home", url: "/" }, { name: "Register", url: "/register" }]}
@@ -52,7 +52,7 @@ const Register = () => {
                             <UserPlus size={20} className="text-[var(--neon-purple)]" />
                         </div>
                         <h1 className="text-xl font-bold text-[var(--neon-purple)] font-mono tracking-widest">INITIALIZE NODE</h1>
-                        <p className="text-xs font-mono text-[var(--text-muted)] mt-1 tracking-widest">CREATE_NEXUSAI_ACCOUNT_v2</p>
+                        <p className="text-xs font-mono text-[var(--text-muted)] mt-1 tracking-widest">CREATE_NOVAAI_ACCOUNT_v2</p>
                     </div>
 
                     <form onSubmit={handleSubmit} className="space-y-5" noValidate>
@@ -73,7 +73,7 @@ const Register = () => {
                             type="email"
                             value={form.email}
                             onChange={handleChange}
-                            placeholder="user@nexusai.app"
+                            placeholder="user@novaai.app"
                             required
                             autoComplete="email"
                             icon={Mail}
@@ -98,7 +98,7 @@ const Register = () => {
                                 size="lg"
                                 variant="purple"
                             >
-                                {loading ? "INITIALIZING..." : "⚡ JOIN NEXUSAI"}
+                                {loading ? "INITIALIZING..." : "⚡ JOIN NOVAAI"}
                             </NeonButton>
                         </motion.div>
                     </form>

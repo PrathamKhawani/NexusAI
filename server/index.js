@@ -23,19 +23,49 @@ dotenv.config();
 const PORT = process.env.PORT || 5000;
 const MONGO_URL = process.env.MONGO_URL || 'mongodb://localhost:27017/nexusai_db';
 
-// MongoDB connection
-mongoose.connect(MONGO_URL)
-    .then(() => {
+// Database connection helper
+let isConnected = false;
+const connectDB = async () => {
+    if (isConnected && mongoose.connection.readyState === 1) {
+        return;
+    }
+    
+    try {
+        console.log('🔄 Connecting to MongoDB Atlas...');
+        await mongoose.connect(MONGO_URL, {
+            serverSelectionTimeoutMS: 5000 // Quick timeout to fail fast instead of hanging 10s
+        });
+        isConnected = true;
         console.log('✅ NexusAI — Connected to MongoDB');
+        
         // Only initialize in-memory crons if not on Vercel
         if (!process.env.VERCEL) {
             initNewsCron();
             initToolsCron();
         }
-    })
-    .catch((error) => {
+    } catch (error) {
         console.error('❌ Error connecting to MongoDB:', error);
-    });
+        isConnected = false;
+        throw error;
+    }
+};
+
+// Initial connection attempt on cold start
+connectDB().catch((err) => console.error('Initial database connection failed:', err));
+
+// Middleware to ensure DB connection is ready before processing API requests (essential for Vercel)
+app.use(async (req, res, next) => {
+    try {
+        await connectDB();
+        next();
+    } catch (error) {
+        res.status(500).json({ 
+            success: false, 
+            message: "Database connection failed", 
+            error: error.message 
+        });
+    }
+});
 
 // Start local server if not running on Vercel
 if (!process.env.VERCEL) {
